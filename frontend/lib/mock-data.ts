@@ -9,7 +9,9 @@ import type {
 
 export const mockUser: User = {
   id: 1,
+  first_name: "Ahmed",
   name: "Ahmed Khan",
+  business_name: "Khan Steel & Tape",
   email: "ahmed@steelworks.pk",
   role: "owner",
   business: {
