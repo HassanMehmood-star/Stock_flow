@@ -6,7 +6,8 @@ type BadgeVariant =
   | "warning"
   | "danger"
   | "info"
-  | "orange";
+  | "orange"
+  | "gold";
 
 interface BadgeProps {
   children: React.ReactNode;
@@ -32,6 +33,9 @@ const variants: Record<BadgeVariant, string> = {
 
   orange:
     "bg-orange-500/15 text-orange-400 border-orange-500/40",
+
+  gold:
+    "bg-yellow-900/40 text-yellow-300 border-yellow-700/50",
 };
 
 export function Badge({
