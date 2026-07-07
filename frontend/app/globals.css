@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --brand-black: #0d0b08;
+  --brand-black-light: #1a140d;
+  --brand-gold: #d4a017;
+  --brand-gold-bright: #f2b705;
+  --brand-brown: #6b4423;
+  --brand-brown-dark: #3e2c1c;
+  --brand-cream: #f5f1e8;
+  --brand-cream-muted: #c4bdb0;
+}
+
+@theme inline {
+  --color-brand-black: var(--brand-black);
+  --color-brand-black-light: var(--brand-black-light);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-bright: var(--brand-gold-bright);
+  --color-brand-brown: var(--brand-brown);
+  --color-brand-brown-dark: var(--brand-brown-dark);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-cream-muted: var(--brand-cream-muted);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--brand-black);
+  color: var(--brand-cream);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 160, 23, 0.25), 0 0 60px rgba(212, 160, 23, 0.1);
+}
+
+.gold-text-glow {
+  text-shadow: 0 0 30px rgba(242, 183, 5, 0.4);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--brand-gold) 0%, var(--brand-gold-bright) 50%, var(--brand-brown) 100%);
+}
+
+.gradient-dark {
+  background: linear-gradient(180deg, var(--brand-black) 0%, var(--brand-black-light) 50%, var(--brand-brown-dark) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-brown-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-gold);
+}
