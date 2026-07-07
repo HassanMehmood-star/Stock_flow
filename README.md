@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stock Flow
 
 A modern, full-stack inventory and order management system built with Django and Next.js.
@@ -238,3 +239,6 @@ For support, please contact the development team or open an issue in the reposit
 ---
 
 **Happy coding! 🚀**
+=======
+# Stock_flow
+>>>>>>> 8d43e619c647a701a73203aa180f4e882adb2b49
